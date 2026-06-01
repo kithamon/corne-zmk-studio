@@ -2,16 +2,15 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: m165437
-      url-base: https://github.com/M165437  
+    - name: kithamon
+      url-base: https://github.com/kithamon
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: v0.3.0 #match these entries
-      
+      revision: v0.3.0
       import: app/west.yml
     - name: nice-view-gem
-      remote: m165437
-      revision: v0.3.0 #match these entries
+      remote: kithamon
+      revision: inverted-fix
   self:
     path: config
